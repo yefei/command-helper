@@ -1,0 +1,32 @@
+{
+  "name": "command-output",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "exports": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "prepublishOnly": "npm run build",
+    "dev": "ts-node test/t1.test.ts"
+  },
+  "author": {
+    "name": "YeFei",
+    "email": "316606233@qq.com"
+  },
+  "devDependencies": {
+    "@types/columnify": "^1.5.1",
+    "@types/node": "^16",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "columnify": "^1.6.0",
+    "moment": "^2.29.4"
+  }
+}
